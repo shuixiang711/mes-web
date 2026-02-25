@@ -83,8 +83,10 @@ export default {
     return {
       codeUrl: "",
       loginForm: {
-        username: "testuser",
-        password: "123456",
+        username: "admin",
+        password: "admin123",
+        // username: "testuser",
+        // password: "123456",
         rememberMe: false,
         code: "",
         uuid: ""

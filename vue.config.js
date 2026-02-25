@@ -7,7 +7,7 @@ function resolve(dir) {
 
 const CompressionPlugin = require('compression-webpack-plugin')
 
-const name = process.env.VUE_APP_TITLE || '鸿辉MES-软件开发记录' // 网页标题
+const name = process.env.VUE_APP_TITLE || '苦糖果MES-软件开发记录' // 网页标题
 
 const port = process.env.port || process.env.npm_config_port || 80 // 端口
 
@@ -35,14 +35,14 @@ module.exports = {
     proxy: {
       // detail: https://cli.vuejs.org/config/#devserver-proxy
       [process.env.VUE_APP_BASE_API]: {
-        target: `http://43.139.77.88:8080`,
+        target: `http://localhost:8080`,
         changeOrigin: true,
         pathRewrite: {
           ['^' + process.env.VUE_APP_BASE_API]: ''
         }
       },
       '/ureport': {
-        target: 'http://43.139.77.88:8080',
+        target: 'http://localhost:8080',
         ws:false,
         changeOrigin: true,
         pathRewrite: {

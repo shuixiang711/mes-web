@@ -1,7 +1,7 @@
 <template>
   <div class="login">
     <el-form ref="loginForm" :model="loginForm" :rules="loginRules" class="login-form">
-      <h3 class="title">苦糖果生产执行管理系统</h3>
+      <h3 class="title">鸿辉生产执行管理系统</h3>
       <el-form-item prop="username">
         <el-input
           v-model="loginForm.username"
@@ -23,7 +23,7 @@
           <svg-icon slot="prefix" icon-class="password" class="el-input__icon input-icon" />
         </el-input>
       </el-form-item>
-      <el-form-item>
+      <!-- <el-form-item>
         <el-select v-model="client" @change="changeClient" placeholder="请选择打印机客户端" style="width: 100%;">
           <el-option
             v-for="item in clientList"
@@ -32,7 +32,7 @@
             :value="item.clientName">
           </el-option>
         </el-select>
-      </el-form-item>
+      </el-form-item> -->
       <el-form-item prop="code" v-if="captchaOnOff">
         <el-input
           v-model="loginForm.code"
@@ -65,9 +65,9 @@
       </el-form-item>
     </el-form>
     <!--  底部  -->
-    <div class="el-login-footer">
+    <!-- <div class="el-login-footer">
       <span @click="toIPC">陕ICP备2022002135号-1</span>
-    </div>
+    </div> -->
   </div>
 </template>
 

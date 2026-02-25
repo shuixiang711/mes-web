@@ -17,7 +17,7 @@ export default {
         "top": 10.5,
         "height": 27,
         "width": 259,
-        "title": "苦糖果标签打印测试",
+        "title": "鸿辉标签打印测试",
         "fontSize": 19,
         "fontWeight": "600",
         "textAlign": "center",

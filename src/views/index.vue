@@ -57,7 +57,7 @@
           </el-table>
         </el-card>
     </el-row>
-    <el-row :gutter="16" style="display: flex; flex-wrap: wrap;">
+    <!-- <el-row :gutter="16" style="display: flex; flex-wrap: wrap;">
       <el-col :span="24" style="display: flex; flex-wrap: wrap;">
         <div v-for="(item, index) in chartList" :key="index" style="margin-bottom: 32px; padding: 0 8px;">
           <el-card style="width: calc(33.333% - 16px); min-width: 400px; box-sizing: border-box;">
@@ -68,7 +68,7 @@
           </el-card>
         </div>
       </el-col>
-    </el-row>
+    </el-row> -->
 
 
   </div>
@@ -131,7 +131,7 @@ export default {
   },
   created(){
       this.getList();
-      this.getCharts();
+      // this.getCharts();
   },
   methods: {
     getList() {
